@@ -76,10 +76,16 @@ body {
     color: #fff;
 }
 
+.ms_bg_white_txt_red {
+    background-color: #fff;
+    color: #DA5F60E6;
+}
+
 /* buttons */
 .btn {
     border-radius: 40px;
     text-align: center;
+    font-family: 'Fredoka One', cursive;
     cursor: pointer;
 }
 
@@ -87,7 +93,7 @@ body {
     padding: 5px 10px;
 }
 .btn_lg {
-    padding: 15px 50px;
+    padding: 20px 50px;
 }
 
 /* colors */
@@ -108,6 +114,14 @@ a.ms_list::after {
     font-size: 0.8em;
     padding-left: 10px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Fredoka One', cursive;
+}
+
 /* header */
 header {
     width: 100%;
@@ -150,8 +164,24 @@ nav {
     margin-right: 30px;
 }
 
+/* header banner */
 .ms_header_banner {
     height: 57vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.ms_header_banner h2 {
+    font-size: 4em;
+}
+.ms_header_banner p {
+    font-size: 1.3em;
+    line-height: 40px;
+}
+.ms_btn_container a{
+    margin-right: 20px;
 }
 
 /* main */
