@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: 'Fredoka One', cursive; */
+}
 /* Utility */
 /* wrapper */
 [class*="ms_wrapper_"] {
@@ -67,11 +71,56 @@
     background-color: #DA5F60E6;
 }
 
+.ms_bg_yellow_txt_white {
+    background-color: #E9D758;
+    color: #fff;
+}
+
+/* buttons */
+.btn {
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_md {
+    padding: 5px 10px;
+}
+.btn_lg {
+    padding: 15px 50px;
+}
+
+/* colors */
+.ms_txt_white {
+    color: #fff;
+}
+
+/* general */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.ms_list::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f0d7';
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
 /* header */
 header {
     width: 100%;
     height: 75vh;
-    padding: 3vh;
+    background-image: url('../img/bg/theme_slider2_bg-1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+}
+.ms_header_overlay {
+    background-color: #DA5F60E6;
+    width: 100%;
+    height: 100%;
+    padding: 5vh;
 }
 
 .ms_top_header {
@@ -86,15 +135,23 @@ header {
     height: 60px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 .ms_navbar {
     list-style: none;
 }
 .ms_navbar li {
     display: inline-block;
+    font-size: 18px;
+    font-family: 'Fredoka One', cursive;
+    margin-right: 30px;
 }
 
 .ms_header_banner {
-    height: 61vh;
+    height: 57vh;
 }
 
 /* main */
