@@ -22,26 +22,30 @@ body {
     width: 60%;
 }
 
+.ms_wrapper_70 {
+    width: 70%;
+}
+
 /* margin */
 .ms_margin_top_60 {
-    top: 60px;
+    margin-top: 60px;
 }
 .ms_margin_bottom_60 {
-    bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .ms_margin_top_30 {
-    top: 30px;
+    margin-top: 30px;
 }
 .ms_margin_bottom_30 {
-    bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .ms_margin_top_15 {
-    top: 15px;
+    margin-top: 15px;
 }
 .ms_margin_bottom_15 {
-    bottom: 15px;
+    margin-bottom: 15px;
 }
 
 /* padding */
@@ -81,6 +85,11 @@ body {
     color: #DA5F60E6;
 }
 
+.ms_bg_red_txt_white {
+    background-color: #DA5F60E6;
+    color: #fff;
+}
+
 /* buttons */
 .btn {
     border-radius: 40px;
@@ -100,14 +109,18 @@ body {
 .ms_txt_white {
     color: #fff;
 }
-
 .ms_txt_black {
     color: #3D404F;
 }
 .ms_txt_grey {
     color: #5C5E6C;
 }
-
+.ms_txt_lightgrey {
+    color: #8B8B8A;
+}
+.ms_txt_red {
+    color: #DA5F60E6;
+}
 /* general */
 a {
     text-decoration: none;
@@ -128,6 +141,12 @@ h4,
 h5 {
     font-family: 'Fredoka One', cursive;
     margin: 15px 0;
+    font-weight: 300;
+
+}
+
+p {
+    font-size: 0.9em;
 }
 
 img.ms_img_icon {
@@ -217,6 +236,11 @@ nav {
 }
 
 /* browse courses */
+#browse {
+    background-image: url('../img/bg/home-background.png');
+    height: 65vh;
+}
+
 .ms_browse_courses {
     display: flex;
     align-items: center;
@@ -233,20 +257,66 @@ nav {
     font-weight: 300;
 }
 
-.ms_browse_text_container p {
-    font-size: 0.9em;
-}
-
 .ms_browse_img_container img{
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: 20%;
 }
 
+/* faculties available */
 .ms_faculties_available {
-    height: 50vh;
+    text-align: center;
 }
+
+.ms_faculties_available h2 {
+    font-size: 3em;
+}
+
+.ms_faculties_bg {
+    width: 100vw;
+    height: 18vh;
+    box-shadow: 1px 1px 12px #ECECEE;
+}
+
+.ms_faculties_container {
+    display: flex;
+    height: 100%;
+}
+
+.ms_single_faculty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: calc(100% / 5);
+    border: 1px solid #ECECEE;
+}
+.ms_single_faculty img {
+    width: 80px;
+}
+.ms_single_faculty.ms_bg_red_txt_white img {
+    filter: brightness(10);
+}
+
+.ms_faculty_clicked {
+    display: flex;
+}
+.ms_faculty_img_container,
+.ms_faculty_text_container {
+    height: 100%;
+    width: 50%;
+}
+.ms_faculty_text_container h2 {
+    font-size: 2.5em;
+}
+.ms_second_wave {
+    width: 100vw;
+    height: 20vh;
+    background-image: url('../img/bg/svg-0.svg');
+}
+
 
 .ms_universtity_events {
     height: 80vh;
