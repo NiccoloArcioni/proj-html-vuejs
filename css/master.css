@@ -467,8 +467,32 @@ nav {
 }
 
 /* discover */
-.ms_discover {
-    height: 60vh;
+.ms_left_banner,
+.ms_right_banner {
+    display: flex;
+}
+
+.ms_banner_text,
+.ms_banner_icon {
+    width: 50%;
+}
+
+.ms_banner_icon img {
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.ms_banner_text {
+    padding: 0 40px;
+}
+
+.ms_banner_text h2{
+    font-size: 2.6em;
+}
+.ms_banner_text p {
+    font-size: 1em;
+    line-height: 150%;
 }
 
 .ms_newsletter {
