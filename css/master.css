@@ -332,7 +332,10 @@ nav {
 .ms_second_wave {
     width: 100vw;
     height: 20vh;
+    background-color: #fff;
     background-image: url('../img/bg/svg-0.svg');
+    background-position-y: bottom;
+    background-size: cover;
 }
 
 /* university */
