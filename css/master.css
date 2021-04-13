@@ -104,6 +104,10 @@ body {
 .btn_lg {
     padding: 20px 50px;
 }
+.circle_btn {
+    border-radius: 50%;
+    padding: 24px 28px;
+}
 
 /* colors */
 .ms_txt_white {
@@ -487,7 +491,7 @@ nav {
     padding: 0 40px;
 }
 
-.ms_banner_text h2{
+.ms_banner_text h2 {
     font-size: 2.6em;
 }
 .ms_banner_text p {
@@ -495,12 +499,40 @@ nav {
     line-height: 150%;
 }
 
+/* newsletter */
 .ms_newsletter {
-    height: 10vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.ms_newsletter h2 {
+    font-size: 2.2em;
+}
+
+.ms_input_container {
+    position: relative;
+}
+
+.ms_input_container input {
+    position: relative;
+    width: 400px;
+    padding: 25px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.ms_input_container a {
+    position: relative;
+    left: -70px;
+    top: 1px;
 }
 
 .ms_partners {
-
+    height: 40vh;
 }
 
 /* footer */
