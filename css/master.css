@@ -494,7 +494,8 @@ nav {
 .ms_banner_text h2 {
     font-size: 2.6em;
 }
-.ms_banner_text p {
+.ms_banner_text p,
+.ms_partners_text p {
     font-size: 1em;
     line-height: 150%;
 }
@@ -531,8 +532,38 @@ nav {
     top: 1px;
 }
 
+/* partners */
+.ms_partners_bg {
+    height: 60vh;
+    width: 100vw;
+    background-color: #ffff;
+}
 .ms_partners {
     height: 40vh;
+    text-align: center;
+}
+.ms_partners_overlay {
+    height: 20vh;
+    width: 100%;
+    background-image: url('../img/bg/background-wave3.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-color: #F7F8FA;
+}
+
+.ms_partners_text h2 {
+    font-size: 2.8em;
+}
+
+.ms_partners_img {
+    height: 45px;
+    margin: 0 10px;
+    filter: contrast(0%);
+    cursor: pointer;
+}
+.ms_partners_img:hover {
+    filter: contrast(100%);
 }
 
 /* footer */
