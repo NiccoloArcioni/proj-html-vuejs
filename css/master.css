@@ -296,6 +296,21 @@ nav {
 .ms_single_faculty img {
     width: 80px;
 }
+.ms_single_faculty.ms_bg_red_txt_white {
+    position: relative;
+}
+.ms_single_faculty.ms_bg_red_txt_white::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #DA5F60E6 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -15px;
+    left: 90px;
+}
 .ms_single_faculty.ms_bg_red_txt_white img {
     filter: brightness(10);
 }
@@ -317,10 +332,71 @@ nav {
     background-image: url('../img/bg/svg-0.svg');
 }
 
-
+/* university */
 .ms_universtity_events {
     height: 80vh;
 }
+/* university year */
+.ms_university_year {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ms_university_year h2 {
+    font-size: 3.6em;
+} 
+.ms_timeline_container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.ms_event_line {
+    position: relative;
+    margin: 150px 0;
+}
+.ms_event_line img {
+    position: relative;
+    transform: translateX(-8%);
+}
+
+.ms_timeline_content {
+    text-align: center;
+    width: 350px;
+}
+
+.ms_timeline_content p{
+    color: #FFFFFFCC;
+}
+
+#orientation {
+    position: absolute;
+    bottom: 45px;
+    left: -70px;
+}
+
+#demo_classes {
+    position: absolute;
+    top: 40px;
+    left: 180px;
+}
+
+#evaluation {
+    position: absolute;
+    bottom: 45px;
+    right: 140px;
+}
+
+#graduation_day {
+    position: absolute;
+    top: 40px;
+    right: -90px;
+}
+
+/* upcoming events */
+
+/* latest courses */
 
 .ms_latest_courses {
 
