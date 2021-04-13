@@ -72,7 +72,7 @@ body {
 
 /* bg colors */
 .ms_bg_red {
-    background-color: #DA5F60E6;
+    background-color: #E56768;
 }
 
 .ms_bg_yellow_txt_white {
@@ -358,7 +358,6 @@ nav {
 }
 .ms_event_line img {
     position: relative;
-    transform: translateX(-8%);
 }
 
 .ms_timeline_content {
@@ -373,25 +372,25 @@ nav {
 #orientation {
     position: absolute;
     bottom: 45px;
-    left: -70px;
+    left: 40px;
 }
 
 #demo_classes {
     position: absolute;
     top: 40px;
-    left: 180px;
+    left: 260px;
 }
 
 #evaluation {
     position: absolute;
     bottom: 45px;
-    right: 140px;
+    right: 280px;
 }
 
 #graduation_day {
     position: absolute;
     top: 40px;
-    right: -90px;
+    right: 60px;
 }
 
 /* upcoming events */
