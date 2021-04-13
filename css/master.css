@@ -101,6 +101,13 @@ body {
     color: #fff;
 }
 
+.ms_txt_black {
+    color: #3D404F;
+}
+.ms_txt_grey {
+    color: #5C5E6C;
+}
+
 /* general */
 a {
     text-decoration: none;
@@ -120,10 +127,16 @@ h3,
 h4,
 h5 {
     font-family: 'Fredoka One', cursive;
+    margin: 15px 0;
+}
+
+img.ms_img_icon {
+    width: 60px;
 }
 
 /* header */
 header {
+    position: relative;
     width: 100%;
     height: 75vh;
     background-image: url('../img/bg/theme_slider2_bg-1.jpg');
@@ -166,7 +179,7 @@ nav {
 
 /* header banner */
 .ms_header_banner {
-    height: 57vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,11 +197,51 @@ nav {
     margin-right: 20px;
 }
 
+.ms_wave_bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 12vh;
+    background-image: url('../img/bg/Wave-1.png');
+    background-position: center;
+}
+
 /* main */
 .ms_browse_courses,
 .ms_latest_courses,
 .ms_partners {
-    height: 40vh;
+    
+}
+
+/* browse courses */
+.ms_browse_courses {
+    display: flex;
+    align-items: center;
+}
+
+.ms_browse_text_container,
+.ms_browse_img_container {
+    width: 50%;
+    height: 100%;
+}
+
+.ms_browse_text_container h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.ms_browse_text_container p {
+    font-size: 0.9em;
+}
+
+.ms_browse_img_container img{
+    width: 80%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 20%;
 }
 
 .ms_faculties_available {
