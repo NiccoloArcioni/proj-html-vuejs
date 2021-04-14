@@ -6,7 +6,6 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    /* font-family: 'Fredoka One', cursive; */
 }
 /* Utility */
 /* wrapper */
@@ -100,6 +99,7 @@ body {
     text-align: center;
     font-family: 'Fredoka One', cursive;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn_xs {
@@ -232,6 +232,25 @@ ul {
     margin-right: 30px;
 }
 
+.ms_navbar li:first-child a,
+.ms_navbar li:not(.btn):hover a {
+    color: #E9D758;
+}
+
+header .btn.ms_bg_yellow_txt_white:hover {
+    background-color: #fff;
+    color: #E56768;
+}
+
+header .btn.ms_bg_yellow_txt_white:hover a {
+    color: #E56768;
+}
+
+header .btn.ms_bg_white_txt_red:hover {
+    background-color: #E9D758;
+    color: #fff;
+}
+
 /* header banner */
 .ms_header_banner {
     height: 50vh;
@@ -265,10 +284,25 @@ ul {
 }
 
 /* main */
+main .btn.ms_bg_yellow_txt_white:hover,
+a.search:hover {
+    background-color: #E56768;
+    color: #fff;
+    box-shadow: 0 0 20px #00000033;
+}
+
+main .btn.ms_bg_red_txt_white:hover {
+    background-color: #E9D758;
+    color: #fff;
+}
 /* browse courses */
 #browse {
     background-image: url('../img/bg/home-background.png');
     height: 65vh;
+}
+
+#browse .btn.ms_bg_yellow_txt_white:hover {
+    background-color: #dd3333 !important;
 }
 
 .ms_browse_courses {
@@ -619,6 +653,12 @@ footer .btn {
     margin: 0 10px 10px 0;
 }
 
+footer .btn:not(.search):hover {
+    transition: 0.9s;
+    background-color: #E9D758;
+    border: transparent;
+}
+
 .ms_edu_infos,
 .ms_search_categories {
     height: 100%;
@@ -646,11 +686,17 @@ footer .btn {
     cursor: pointer;
 }
 
+.ms_get_edu_prime ul li:not(:first-child):hover,
+.ms_networking ul li:not(:first-child):hover {
+    transition: 0.5s;
+    color: #E9D758;
+}
+
 .ms_search_categories {
     text-align: right;
 }
 
-.ms_search_categories .ms_input_container a {
+.ms_search_categories .ms_input_container a.search {
     top: -42px;
     left: 52px;
 }
@@ -658,6 +704,10 @@ footer .btn {
 .ms_categories_container ul.ms_inline_list {
     flex-wrap: wrap;
     justify-content: flex-end;
+}
+
+.ms_categories_container li {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* fixed elements */
