@@ -102,6 +102,10 @@ body {
     cursor: pointer;
 }
 
+.btn_xs {
+    padding: 5px 15px;
+}
+
 .btn_md {
     padding: 10px 25px;
 }
@@ -111,6 +115,20 @@ body {
 .circle_btn {
     border-radius: 50%;
     padding: 24px 28px;
+}
+
+.circle_btn_xs {
+    border-radius: 50%;
+    padding: 14px 18px;
+}
+
+/* border colors */
+.ms_border_yellow {
+    border: 1px solid #E9D758;
+}
+
+.ms_border_white {
+    border: 1px solid #fff;
 }
 
 /* colors */
@@ -129,6 +147,10 @@ body {
 .ms_txt_red {
     color: #E56768;
 }
+.ms_txt_yellow {
+    color: #E9D758;
+}
+
 /* general */
 a {
     text-decoration: none;
@@ -156,10 +178,15 @@ h5 {
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.9em;
+    letter-spacing: 200%;
 }
 
 img.ms_img_icon {
     width: 60px;
+}
+
+ul.ms_inline_list {
+    display: flex;
 }
 
 /* header */
@@ -185,7 +212,7 @@ header {
     justify-content: space-between;
 }
 
-.ms_header_logo {
+.ms_logo {
     width: 250px;
     height: 60px;
 }
@@ -195,7 +222,7 @@ nav {
     align-items: center;
 }
 
-.ms_navbar {
+ul {
     list-style: none;
 }
 .ms_navbar li {
@@ -577,8 +604,58 @@ nav {
 footer {
     width: 100%;
     height: 35vh;
+    display: flex;
+    align-items: center;
 }
 
-footer .ms_wrapper_60 {
+footer .ms_wrapper_70 {
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .btn {
+    margin: 0 10px 10px 0;
+}
+
+.ms_edu_infos,
+.ms_search_categories {
     height: 100%;
+    width: 35%;
+    padding: 20px;
+}
+
+.ms_get_edu_prime,
+.ms_networking {
+    height: 100%;
+    width: 15%;
+    padding: 15px;
+}
+
+.ms_get_edu_prime ul li:first-child,
+.ms_networking ul li:first-child {
+    margin-bottom: 30px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.ms_get_edu_prime ul li:not(:first-child),
+.ms_networking ul li:not(:first-child) {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.ms_search_categories {
+    text-align: right;
+}
+
+.ms_search_categories .ms_input_container a {
+    top: -42px;
+    left: 10px;
+}
+
+.ms_categories_container ul.ms_inline_list {
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
