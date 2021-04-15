@@ -670,28 +670,24 @@ footer .btn:not(.search):hover {
     padding: 20px;
 }
 
-.ms_get_edu_prime,
-.ms_networking {
+.ms_footer_list {
     height: 100%;
     width: 15%;
     padding: 15px;
 }
 
-.ms_get_edu_prime ul li:first-child,
-.ms_networking ul li:first-child {
+.ms_footer_list ul li:first-child {
     margin-bottom: 30px;
     font-size: 1.4em;
     font-weight: 600;
 }
 
-.ms_get_edu_prime ul li:not(:first-child),
-.ms_networking ul li:not(:first-child) {
+.ms_footer_list ul li:not(:first-child) {
     margin-bottom: 15px;
     cursor: pointer;
 }
 
-.ms_get_edu_prime ul li:not(:first-child):hover,
-.ms_networking ul li:not(:first-child):hover {
+.ms_footer_list ul li:not(:first-child):hover {
     transition: 0.5s;
     color: #E9D758;
 }
@@ -712,6 +708,8 @@ footer .btn:not(.search):hover {
 
 .ms_categories_container li {
     font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7em;
 }
 
 /* fixed elements */

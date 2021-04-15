@@ -47,7 +47,7 @@
                         <!-- buttons -->
                         <div class="ms_btn_container">
                             <a href="#" v-for='button in header.banner.buttons' :class='button.color == "yellow" ? "btn btn_lg ms_bg_yellow_txt_white" : "btn btn_lg ms_bg_white_txt_red"'>
-                                <i v-if='hasIcon' :class="button.icon"></i>
+                                <i v-if='button.hasIcon' :class="button.icon"></i>
                                 {{button.name}}
                             </a>
                         </div>
@@ -300,64 +300,41 @@
                 <!-- infos and social -->
                 <div class="ms_edu_infos">
                     <ul class="ms_txt_white">
-                        <li><img class="ms_logo" src="img/theme_eduprime_logo.png" alt="EduPrime Logo"></li>
-                        <li class="ms_margin_top_30 ms_margin_bottom_30"><p>EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools ect.</p></li>
+                        <li><img class="ms_logo" :src="footer.infos.logo" alt="EduPrime Logo"></li>
+                        <li class="ms_margin_top_30 ms_margin_bottom_30"><p>{{footer.infos.description}}</p></li>
                         <li>
                             <ul class="ms_inline_list ms_social">
-                                <li><a href="#" class="btn circle_btn_xs ms_border_yellow"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" class="btn circle_btn_xs ms_border_yellow"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" class="btn circle_btn_xs ms_border_yellow"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" class="btn circle_btn_xs ms_border_yellow" v-for='social in footer.infos.socials'><i :class="social"></i></a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
                 
                 <!-- get EduPrime -->
-                <div class="ms_get_edu_prime">
-                    <ul class="ms_txt_white">
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                    </ul>
-                </div>
-                
                 <!-- networking -->
-                <div class="ms_networking">
+                <div v-for='element in footer.lists' class="ms_footer_list">
                     <ul class="ms_txt_white">
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
+                        <li><h5>{{element.name}}</h5></li>
+                        <li v-for='text in element.list'>{{text}}</li>
                     </ul>
                 </div>
                 
                 <!-- search categories -->
                 <div class="ms_search_categories">
-                    <div class="ms_input_container">
-                        <input type="text" placeholder="Search..">
-                        <a href="#" class="btn circle_btn ms_bg_yellow_txt_white search"><i class="fas fa-search"></i></a>
+                    <div v-if='footer.searchCategories.hasInput' class="ms_input_container">
+                        <input type="text" :placeholder="footer.searchCategories.inputPlaceholder">
+                        <a href="#" :class="footer.searchCategories.inputBtn.color == 'yellow' ? 'btn circle_btn ms_bg_yellow_txt_white search' : null">
+                            <i :class="footer.searchCategories.inputBtn.icon"></i>
+                        </a>
                     </div>
                     <div class="ms_categories ms_txt_white">
-                        <h4>Search categories</h4>
+                        <h4>{{footer.searchCategories.title}}</h4>
                         <div class="ms_categories_container">
                             <ul class="ms_inline_list">
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
-                                <li class="btn btn_xs ms_border_white"><a href="#">lorem</a></li>
+                                <li class="btn btn_xs ms_border_white" v-for='categorie in footer.searchCategories.categories'><a href="#">{{categorie}}</a></li>
                             </ul>
                         </div>
-                        <p class="ms_txt_yellow">ModelTheme.All right reserved.</p>
+                        <p class="ms_txt_yellow">{{footer.searchCategories.rightReserved}}</p>
                     </div>
                 </div>
             </div>

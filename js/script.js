@@ -65,7 +65,58 @@ var app = new Vue ({
             }
         },
         footer : {
-        
+            infos: {
+                logo: 'img/theme_eduprime_logo.png',
+                description: 'EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools ect.',
+                socials: [
+                    'fab fa-facebook-f',
+                    'fab fa-twitter',
+                    'fab fa-instagram'
+                ]
+            },
+            lists: [
+                {
+                    name: 'Get EduPrime',
+                    list: [
+                        'Request a website',
+                        'Browse Themes',
+                        'Payment optipns',
+                        'Support System',
+                        'Checkout',
+                        'Purchase Theme'
+                    ]
+                },
+                {
+                    name: 'Networking',
+                    list: [
+                        'Purchase Theme',
+                        'Our Benefits',
+                        'Our Team',
+                        'Our Services',
+                        'Other Products',
+                        'My Account'
+                    ]
+                }
+            ],
+            searchCategories: {
+                hasInput: true,
+                inputPlaceholder: 'Search...',
+                inputBtn: {
+                    icon: 'fas fa-search',
+                    color: 'yellow'
+                },
+                title: 'Search categories',
+                categories: [
+                    'economy',
+                    'design',
+                    'coaching',
+                    'business',
+                    'medicine',
+                    'law',
+                    'fitness'
+                ],
+                rightReserved: 'ModelTheme.All right reserved.'
+            }
         }
     }
 })
