@@ -193,7 +193,7 @@ ul.ms_inline_list {
 header {
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     background-image: url('../img/bg/theme_slider2_bg-1.jpg');
     background-position: center;
     background-size: 100% 100%;
@@ -266,10 +266,12 @@ header .btn.ms_bg_white_txt_red:hover {
 }
 .ms_header_banner h2 {
     font-size: 4em;
+    margin-bottom: 0;
 }
 .ms_header_banner p {
     font-size: 1.3em;
     line-height: 40px;
+    margin-bottom: 15px;
 }
 .ms_btn_container a{
     margin-right: 20px;
@@ -754,16 +756,16 @@ footer .btn:not(.search):hover {
     font-size: 0.8em;
 }
 #bubble_message:after {
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 10px 10px 0;
-border-color: #000000 transparent;
-display: block;
-width: 0;
-z-index: 1;
-bottom: -10px;
-left: 90px;
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: #000000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -10px;
+    left: 90px;
 }
 
 /* bottom left */
