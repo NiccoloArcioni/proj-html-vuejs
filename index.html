@@ -27,19 +27,14 @@
                 <!-- top header -->
                 <div class="ms_top_header">
                     <!-- header_logo -->
-                    <img class="ms_logo" src="img/theme_eduprime_logo.png" alt="EduPrime Logo">
+                    <img class="ms_logo" :src="header.logo" alt="EduPrime Logo">
     
                     <!-- navbar -->
                     <nav>
                         <ul class="ms_navbar">
-                            <li><a href="#" class="ms_list">lorem</a></li>
-                            <li><a href="#" class="ms_list">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#" class="ms_list">lorem</a></li>
-                            <li><a href="#" class="ms_list">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li class="btn btn_lg ms_bg_yellow_txt_white"><a href="#">LOREM</a></li>
+                            <li v-for='element in header.navbar' :class='element.isAButton ? "btn btn_lg ms_bg_yellow_txt_white" : null'>
+                                <a href="#" :class='element.hasDropDown ? "ms_drop_down" : null'>{{element.name}}</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -47,18 +42,13 @@
                 <!-- banner -->
                 <section>
                     <div class="ms_header_banner ms_wrapper_40 ms_txt_white ms_padding_top_60">
-                        <h2>Key to your success</h2>
-                        <p>EduPrime is the most versatile WordPress theme for educational purposes, <br> 
-                            showcasing universities, courses, secondary schools ect.</p>
+                        <h2>{{header.banner.title}}</h2>
+                        <p>{{header.banner.description}}</p>
                         <!-- buttons -->
                         <div class="ms_btn_container">
-                            <a href="#" class="btn btn_lg ms_bg_yellow_txt_white">
-                                <i class="fas fa-search"></i>
-                                Search courses
-                            </a>
-                            <a href="#" class="btn btn_lg ms_bg_white_txt_red">
-                                <i class="fas fa-user-plus"></i>
-                                Apply for university
+                            <a href="#" v-for='button in header.banner.buttons' :class='button.color == "yellow" ? "btn btn_lg ms_bg_yellow_txt_white" : "btn btn_lg ms_bg_white_txt_red"'>
+                                <i v-if='hasIcon' :class="button.icon"></i>
+                                {{button.name}}
                             </a>
                         </div>
                     </div>

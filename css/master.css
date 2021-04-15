@@ -157,7 +157,7 @@ a {
     color: #fff;
 }
 
-a.ms_list::after {
+a.ms_drop_down::after {
     font-family: 'Font Awesome 5 Free';
     content: '\f0d7';
     font-weight: 600;
@@ -235,6 +235,10 @@ ul {
 .ms_navbar li:first-child a,
 .ms_navbar li:not(.btn):hover a {
     color: #E9D758;
+}
+
+.ms_navbar .btn {
+    text-transform: uppercase;
 }
 
 header .btn.ms_bg_yellow_txt_white:hover {
